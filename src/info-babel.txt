@@ -1,0 +1,5 @@
+npm install --global gulp-cli
+
+npm i @babel/core @babel/preset-env babel-loader browser-sync del -D
+
+npm install sass gulp-sass
