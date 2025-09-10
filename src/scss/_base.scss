@@ -1,0 +1,26 @@
+@use './mixins';
+
+@include font-face(' Epilogue', '../assets/fonts/Epilogue.ttf');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: $font-base;
+    background-color: $bg-light;
+    color: $color-text-dark-gray;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1210px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
