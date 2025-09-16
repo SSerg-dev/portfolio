@@ -1,22 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Portfolio</title>
-    <style>
-    /* preserves newlines and wraps long lines */
-    .preserve { white-space: pre-wrap; }
-  </style>
+    <link rel="stylesheet" href="style.min.css">
+    <script src="app.min.js" defer></script>
+
 </head>
+
 <body>
-    <h1>Headline</h1>
-    <p class="preserve">
-        `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Porro ab aut accusantium consequuntur similique minima illum placeat reiciendis nesciunt dolorem.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Porro ab aut accusantium consequuntur similique minima illum placeat reiciendis nesciunt dolorem.`
-    </p>
+    <header class="header">
+        <div class="container header__container">
+            <a href="#" class="logo header__logo">
+                <img src="assets/images/logo.svg" class="logo__image" alt="">
+                <p class="logo__title">Portfolio</p>
+            </a>
+            <nav class="menu header__menu">
+                <button class="button button--outline menu__toggle js-menu-toggle" aria-expanded="false" aria-controls="menu__list">
+                    <span class="visually-hidden">Menu</span>
+                    <span class="menu__toggle-icon">
+                        <span class="line line-1"></span>
+                        <span class="line line-2"></span>
+                        <span class="line line-3"></span>
+                    </span>
+                </button>
+                <ul id="menu__list" class="menu__list">
+                    <li class="menu__item">
+                        <a href="#about" class="menu__link">About</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#services" class="menu__link">Services</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#fag" class="menu__link">FAQ</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#blog" class="menu__link">Blog</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="#contact" class="header__button button button--outline">Contact</a>
+        </div>
+
+    </header>
+    
+
 </body>
+
 </html>

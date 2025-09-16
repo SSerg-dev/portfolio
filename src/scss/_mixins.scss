@@ -1,3 +1,6 @@
+@use 'sass:map';
+@use 'variables' as *;
+
 @mixin font-face($font-name, $file-path, $weight: 400, $style: normal) {
     @font-face {
         font-family: $font-name;
@@ -13,4 +16,22 @@
     margin: 0;
     padding: 0;
     list-style: none;
+}
+
+@mixin lg {
+    @media screen and (max-width: map.get($breakpoints, 'lg')) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media screen and (max-width: map.get($breakpoints, 'md')) {
+        @content;
+    }
+}
+
+@mixin sm {
+    @media screen and (max-width: map.get($breakpoints, 'sm')) {
+        @content;
+    }
 }

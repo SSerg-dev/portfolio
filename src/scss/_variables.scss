@@ -1,3 +1,5 @@
+@use 'functions' as *;
+
 $font-base: 'Epilogue', sans-serif;
 
 $color-primary: #EF6D58;
@@ -9,3 +11,10 @@ $color-text-light: #FFFFFF;
 $color-text-gray: #B2B2BA;
 $color-text-dark: #391400;
 $color-text-dark-gray: #806354;
+
+$gutter: 20px;
+
+$breakpoints: (sm: rem(768), md: rem(992), lg: rem(1200));
+
+
+

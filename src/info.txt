@@ -4,3 +4,7 @@ npm i @babel/core @babel/preset-env babel-loader browser-sync del -D
 
 npm install sass gulp-sass
 
+# git history
+1. Project preparation
+2. Header layout
+

@@ -1,3 +1,7 @@
-h1 {
-    color: green;
-}
+@forward 'scss/variables';
+@forward 'scss/functions';
+@forward 'scss/mixins';
+@forward 'scss/base';
+
+@forward 'scss/common/index';
+@forward 'scss/layout/index';
