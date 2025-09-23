@@ -1,8 +1,8 @@
-@use './variables' as *; 
+@use './variables' as *;
 @use './mixins' as *;
 @use './functions' as *;
 
-@include font-face(' Epilogue', '../assets/fonts/Epilogue');
+@include font-face('Epilogue', '../assets/fonts/Epilogue');
 
 * {
     box-sizing: border-box;
