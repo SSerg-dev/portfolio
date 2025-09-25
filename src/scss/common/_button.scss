@@ -1,6 +1,8 @@
-@use '../variables' as *; 
+@use '../variables' as *;
 @use '../mixins' as *;
 @use '../functions' as *;
+@use 'sass:color';
+
 
 .button {
     display: inline-flex;
@@ -9,11 +11,17 @@
     padding: rem(15) rem(35);
     border: none;
     border-radius: rem(6);
+    color: #FFF;
+    text-align: center;
+    font-size: rem(14);
+    font-weight: 900;
+    line-height: normal;
+    text-transform: uppercase;
 
     &:hover,
     &:active {
         text-decoration: none;
-    }  
+    }
 }
 
 .button--outline {
@@ -24,5 +32,16 @@
     &:hover,
     &:active {
         background-color: rgba(255, 255, 255, .05);
-    }  
+    }
+}
+
+.button--primary {
+    color: $color-text-light;
+    background-color: $color-primary;
+
+    &:hover,
+    &:active {
+        background-color: color.adjust($color-primary, $lightness: -5%);
+
+    }
 }

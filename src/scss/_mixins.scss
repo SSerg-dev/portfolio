@@ -7,6 +7,7 @@
         src:
             local($font-name),
             url($file-path + '.ttf') format('truetype');
+            // url($file-path + '.woff2') format('truetype');
         font-weight: $weight;
         font-style: $style;
     }
