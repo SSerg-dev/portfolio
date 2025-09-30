@@ -5,9 +5,8 @@
 @include font-face('Epilogue', '../assets/fonts/Epilogue-VariableFont_wght');
 
 body {
-  font-family: $font-base; // 'Epilogue', sans-serif
+    font-family: $font-base;
 }
-
 
 * {
     box-sizing: border-box;
