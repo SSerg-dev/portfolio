@@ -9,7 +9,7 @@
     --section-color: #{$color-text-dark-gray};
 
     background-color: var(--section-bg);
-    padding: rem(140) 0;
+    padding: rem(100) 0;
     color: var(--section-color);
 
     &--dark {
@@ -20,6 +20,21 @@
 
     @include sm {
         padding: rem(34) 0 rem(50);
+    }
+}
+
+.section__header {
+    margin-bottom: rem(64);
+
+    @include sm {
+        font-size: rem(35);
+    }
+
+    &--center {
+        min-width: rem(450);
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
     }
 }
 
@@ -35,7 +50,8 @@
 
 .section__title {
     color: var(--section-title-color);
-    font-weight: 600;
+    font-weight: 800;
+    font-feature-settings: "clig" off, "liga" off;
 
     &--h1 {
         font-size: rem(72);
@@ -47,7 +63,25 @@
             font-size: rem(56);
         }
     }
+
+    &--h2 {
+        font-size: rem(56);
+        line-height: 1.14;
+        letter-spacing: -1px;
+        text-align: center;
+        margin: 0 0 rem(24);
+
+        @include md {
+            font-size: rem(40);
+        }
+
+        &--center {
+            text-align: center;
+        }
+
+    }
 }
+
 
 .section_desc {
     line-height: 2;

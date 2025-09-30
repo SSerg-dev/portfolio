@@ -89,7 +89,6 @@
 
     @include sm {
         +.menu__list {
-            // $$
             display: flex;
             background-color: $bg-dark;
 

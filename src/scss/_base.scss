@@ -2,7 +2,12 @@
 @use './mixins' as *;
 @use './functions' as *;
 
-@include font-face('Epilogue', '../assets/fonts/Epilogue');
+@include font-face('Epilogue', '../assets/fonts/Epilogue-VariableFont_wght');
+
+body {
+  font-family: $font-base; // 'Epilogue', sans-serif
+}
+
 
 * {
     box-sizing: border-box;
