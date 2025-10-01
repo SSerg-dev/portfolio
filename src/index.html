@@ -5,6 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <!-- $$ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <!--    -->
     <link rel="stylesheet" href="style.min.css">
     <script src="app.min.js" defer></script>
 </head>
@@ -101,6 +108,30 @@
 
             </div>
         </section>
+
+        document.addEventListener('DOMContentLoaded', () => {
+
+    // menu
+    const menuButton = document.querySelector('.js-menu-toggle')
+    menuButton.onclick = function () {
+        if (menuButton.classList.contains('menu__toggle--active')) {
+            menuButton.classList.remove('menu__toggle--active')
+            menuButton.setAttribute('aria-expanded', 'false')
+        } else {
+            menuButton.classList.add('menu__toggle--active')
+            menuButton.setAttribute('aria-expanded', 'true')
+        }
+    }
+
+    // video
+    const videoButton = document.querySelector('.js-video-play');
+    videoButton.onclick = function () {
+        const video = videoButton.parentElement;
+        video.classList.add('is-active');
+    }
+
+})
+
     </main>
 </body>
 

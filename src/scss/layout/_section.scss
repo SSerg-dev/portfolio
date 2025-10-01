@@ -78,8 +78,18 @@
         &--center {
             text-align: center;
         }
-
     }
+
+    &--h3 {
+        font-size: rem(40);
+        line-height: 1.2;
+        margin: 0 0 rem(28);
+
+        @include md {
+            margin-bottom: rem(16);
+        }
+    }
+
 }
 
 .section_desc {
