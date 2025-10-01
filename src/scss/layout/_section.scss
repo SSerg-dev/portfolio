@@ -82,8 +82,21 @@
     }
 }
 
-
 .section_desc {
     line-height: 2;
     margin: 0 0 rem(34);
+}
+
+.section__footer {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: rem(60);
+
+    &--center {
+        text-align: center;
+    }
+
+    @include sm {
+        padding-top: rem(44);
+    }
 }
