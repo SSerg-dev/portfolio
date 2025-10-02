@@ -11,6 +11,7 @@
     background-color: var(--section-bg);
     padding: rem(100) 0;
     color: var(--section-color);
+    position: relative;
 
     &--dark {
         --section-bg: #{$bg-dark};
@@ -21,6 +22,18 @@
     @include sm {
         padding: rem(34) 0 rem(50);
     }
+}
+
+.section:not(.section--dark)+.section:not(.section--dark)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: rem(1);
+    width: calc(100% - #{$gutter} * 2);
+    max-width: calc(rem(1210) - #{$gutter} * 2);
+    background-color: $border-color;
 }
 
 .section__header {

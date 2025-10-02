@@ -16,7 +16,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const videoButton = document.querySelector('.js-video-play');
     videoButton.onclick = function () {
         const video = videoButton.parentElement;
+        const videoIframe = video.querySelector('iframe')
+        const options = {
+            event: 'command',
+            func: 'playVideo'
+        }
+        videoIframe.contentWindow.postMessage(JSON.stringify(options), '*')
         video.classList.add('is-active');
     }
-    
+
 })
