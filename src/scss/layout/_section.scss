@@ -49,6 +49,28 @@
         margin-left: auto;
         text-align: center;
     }
+
+    &--flex {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+
+        .section__info {
+            margin-bottom: rem(-15);   
+        }
+
+        .section__title {
+            margin-bottom: 0;
+
+            @include sm {
+                margin-bottom: rem(32);
+            }
+        }
+
+        @include sm {
+            display: block;
+        }
+    }
 }
 
 .section__label {
@@ -123,3 +145,14 @@
         padding-top: rem(44);
     }
 }
+
+// $$
+/*
+.portfolio-item {
+  display: block;               
+  width: 300px;                
+  height: 200px;                
+  background-size: cover;       
+  background-position: center;  
+}
+*/
