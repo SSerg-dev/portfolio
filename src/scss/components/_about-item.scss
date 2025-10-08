@@ -12,6 +12,10 @@
      color: var(--section-title-color);
      padding: rem(32) rem(48) rem(32) rem(200);
 
+     @include sm {
+         padding-left: rem(170);
+     }
+
      &--icon-experience::after {
          background-image: url('../../assets/images/sprite.svg#icon-calendar-check');
      }
@@ -30,6 +34,10 @@
          background-color: $color-primary;
          border-radius: 50%;
          z-index: 1;
+
+         @include sm {
+             left: rem(30);
+         }
      }
 
      &::after {
@@ -44,6 +52,10 @@
          background-repeat: no-repeat;
          background-size: contain;
          z-index: 2;
+
+         @include sm {
+             left: calc($about-item-icon-size / 2 + rem(30));
+         }
      }
  }
 
