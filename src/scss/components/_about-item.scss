@@ -16,14 +16,6 @@
          padding-left: rem(170);
      }
 
-     &--icon-experience::after {
-         background-image: url('../../assets/images/sprite.svg#icon-calendar-check');
-     }
-
-     &--icon-projects::after {
-         background-image: url('../../assets/images/sprite.svg#icon-case');
-     }
-
      &::before {
          content: '';
          position: absolute;
@@ -57,6 +49,15 @@
              left: calc($about-item-icon-size / 2 + rem(30));
          }
      }
+
+     &--icon-experience::after {
+         background-image: url('../../assets/images/sprite.svg#icon-calendar-check');
+     }
+
+     &--icon-projects::after {
+         background-image: url('../../assets/images/sprite.svg#icon-case');
+     }
+
  }
 
  .about-item__title {
