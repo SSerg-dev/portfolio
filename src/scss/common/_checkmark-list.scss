@@ -11,7 +11,7 @@
  .checkmark-list__item {
      position: relative;
      display: flex;
-     align-items: center; //flex-start;
+     align-items: center; 
      gap: rem(16);
 
      &::before {

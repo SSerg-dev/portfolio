@@ -130,9 +130,15 @@
         }
     }
 
+    &--h4 {
+        font-size: rem(24); 
+        line-height: 1.33;
+        margin: 0 0 rem(22);
+    }
+
 }
 
-.section__label { 
+.section__label {
     margin: 0 0 rem(18);
     color: var(--section-title-color);
     font-size: rem(20);
