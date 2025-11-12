@@ -1,3 +1,7 @@
+import Swiper from 'swiper';
+import { Pagination, A11y } from 'swiper/modules';
+
+
 document.addEventListener('DOMContentLoaded', () => {
 
     // menu
@@ -24,5 +28,35 @@ document.addEventListener('DOMContentLoaded', () => {
         videoIframe.contentWindow.postMessage(JSON.stringify(options), '*')
         video.classList.add('is-active');
     }
+
+    // Testimonials
+    const swiper = new Swiper('.js-testimonials-slider', {
+        modules: [Navigation, Pagination],
+        direction: 'horizontal',
+        loop: true,
+        speed: 600,
+        autoHeight: true,
+        spaceBetween: 20,
+        slidesPerView: 1,
+        a11y: true,
+        pagination: {
+            el: '.testimonials-slider__pagination',
+            bulletElement: 'button',
+            bulletClass: 'testimonials-slider__pagination-bullet',
+            bulletActiveClass: 'testimonials-slider__pagination-bullet--active',
+            clickable: true,
+        },
+        breakpoints: {
+            // when windows width is >= 769px
+            769: {
+                slidesPerView: 'auto',
+                centeredSlides: true,
+                spaceBetween: 0,
+                slideToClickedSlide: true,
+            }
+
+        }
+
+    })
 
 })
