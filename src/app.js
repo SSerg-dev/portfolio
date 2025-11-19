@@ -55,9 +55,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 spaceBetween: 0,
                 slideToClickedSlide: true,
             }
-
         }
-
     })
-
 })
