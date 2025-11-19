@@ -9,33 +9,6 @@ npm install sass gulp-sass
 2. Header layout
 
 # ------------------------------------
-1. Build your project
-
-If you are using gulp:
-
-gulp
-
-
-This updates your dist/ folder.
-
-2. Deploy to GitHub Pages again
-
-If you use the gh-pages package:
-
-with Yarn:
-
+yarn build
 yarn deploy
-
-
-This will push the updated /dist folder to the gh-pages branch.
-
-3. Wait a minute
-
-GitHub Pages can take 30–60 seconds to update.
-Then your site URL:
-
-https://sserg-dev.github.io/portfolio/
-
-
-will show your new changes.
 

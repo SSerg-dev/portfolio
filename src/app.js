@@ -1,6 +1,7 @@
+// $$
 import Swiper from 'swiper';
-import { Pagination, A11y } from 'swiper/modules';
-
+import { Pagination, A11y } from 'swiper';
+Swiper.use([Pagination, A11y]);
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -31,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Testimonials
     const swiper = new Swiper('.js-testimonials-slider', {
-        modules: [Navigation, Pagination],
+        modules: [Pagination, A11y],
         direction: 'horizontal',
         loop: true,
         speed: 600,
