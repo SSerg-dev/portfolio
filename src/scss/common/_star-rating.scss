@@ -11,9 +11,9 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url('../../assets/images/sprite.svg#icon-start-unchecked');
+    background-image: url('assets/images/sprite.svg#icon-start-unchecked');
 
     &--checked {
-       background-image: url('../../assets/images/sprite.svg#icon-start-checked');
+       background-image: url('assets/images/sprite.svg#icon-start-checked');
     }
  }

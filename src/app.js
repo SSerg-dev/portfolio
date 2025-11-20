@@ -1,4 +1,3 @@
-// $$
 import Swiper from 'swiper';
 import { Pagination, A11y } from 'swiper';
 Swiper.use([Pagination, A11y]);
