@@ -38,6 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
         autoHeight: true,
         spaceBetween: 20,
         slidesPerView: 1,
+        initialSlide: 1,
         a11y: true,
         pagination: {
             el: '.testimonials-slider__pagination',
