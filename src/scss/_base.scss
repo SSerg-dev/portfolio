@@ -4,8 +4,8 @@
 
 @include font-face('Epilogue', '../assets/fonts/Epilogue-VariableFont_wght');
 
-body {
-    font-family: $font-base;
+html {
+    scroll-behavior: smooth;
 }
 
 * {

@@ -11,8 +11,33 @@
         href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
     <!--    -->
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="stylesheet" href="style.min.css">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Portfolio",
+        "description": "Sergei Shabailov's portfolio website",
+        "headline": "Sergei Shabailov's portfolio",
+        "author": {
+        "@type": "Person",
+        "name": "Sergei Shabailov",
+        "email": "info@agency.com",
+        "telephone": "+12345678900"
+        },
+        "sameAs": [
+            "https://www.facebook.com/sergei.shabailov",
+            "https://www.twitter.com/sergei.shabailov",
+            "https://www.instagram.com/sergei.shabailov"
+        ]
+    }
+</script>
+
     <script src="app.min.js" defer></script>
+
 </head>
 
 <body>
@@ -633,7 +658,8 @@
                     <li class="social-list__item socials-item">
                         <a href="" class="social-item__link" title="Sergei Shabailov on Facebook">
                             <svg class="social-item__icon" aria-hidden="true">
-                                <use href="./assets/images/sprite.svg#icon-facebook" style="background-color: yellowgreen;"> </use>
+                                <use href="./assets/images/sprite.svg#icon-facebook"
+                                    style="background-color: yellowgreen;"> </use>
                             </svg>
                         </a>
                     </li>
